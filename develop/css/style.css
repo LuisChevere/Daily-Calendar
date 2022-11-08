@@ -1,0 +1,28 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+  }
+  
+  /* .byline {
+    font-weight: 200;
+    font-style: italic;
+  } */
+
+  .h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: black;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+  }
+
+  .jumbotron {
+    height: 200px;
+    width: 100%;
+    background-color: whitesmoke;
+    border-bottom: 5px solid black;
+  }
