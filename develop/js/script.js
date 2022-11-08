@@ -1,2 +1,7 @@
-var Today = dayjs('2020-11-03').format('dddd, MMMM D YYYY');
-$('#3a').text(reformatDate);
+function getlocalStorage(){
+    var value = localStorage.getItem(key);
+    if (value) {
+        $('text${key}').text(value);
+    }
+}
+
