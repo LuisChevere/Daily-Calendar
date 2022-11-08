@@ -5,3 +5,6 @@ function getlocalStorage(){
     }
 }
 
+$ (document).ready(function(){
+    $
+})
