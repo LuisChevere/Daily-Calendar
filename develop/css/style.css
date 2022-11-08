@@ -1,12 +1,8 @@
 body {
     font-family: 'Titillium Web', sans-serif;
     font-size: 16px;
+    background-color: gray;
   }
-  
-  /* .byline {
-    font-weight: 200;
-    font-style: italic;
-  } */
 
   .h1 {
     display: flex;
@@ -25,4 +21,12 @@ body {
     width: 100%;
     background-color: whitesmoke;
     border-bottom: 5px solid black;
+  }
+
+  .text {
+    height: 100%;
+    width:100%;
+    color: #000000;
+    border: 2px solid black;
+    padding: 10px;
   }
