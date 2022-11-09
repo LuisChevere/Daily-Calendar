@@ -12,5 +12,14 @@ $ (document).ready(function(){
         var column1 = $('div class="col-sm-2"> <p class="hour">' + formatAMPM(i) + '</p>');
         var column2 = $('<div class="col-sm-8 past"><textarea id=text${1} class="description" placeholder"Add event."><textarea>');
         var column3 = $('<div class="col-sm-2"><button class="saveBtn" id=${i}><i class="fas fa-save"></i></button>');
+        
+        row.append(column1)
+        row.append(column2)
+        row.append(column3)
+        $(".container").append(row);
+
+        getlocalStorage(i);
     }
+
 })
+
