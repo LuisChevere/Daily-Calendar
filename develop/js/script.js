@@ -1,4 +1,4 @@
-function getlocalStorage(){
+function getlocalStorage(key){
     var value = localStorage.getItem(key);
     if (value) {
         $('text${key}').text(value);
@@ -31,11 +31,17 @@ $ (document).ready(function(){
 
     function colors(){
         var currentTime = new Date().getHours();
-        for (var i = 9; i <18; i++) {
-            if ($('#${i}').data("time") == currentTime);
+        for (var i = 9; i < 18; i++) {
+            if ($('#${i}').data("time") == currentTime){
                 $('#text${1}').addClass("now");
         }else if (curTime < $('#${1}').data("time")) {
             $('#text${i}').addClass("later");
         }
     }
+}
+
+setInterval(function() {
+    colors();
+}, 1000);
+
 })
