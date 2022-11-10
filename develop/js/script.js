@@ -44,4 +44,12 @@ setInterval(function() {
     colors();
 }, 1000);
 
+var saveBtn = $('.saveBtn');
+saveBtn.on('click', function(){
+    var eventId = $(this).attribute('id');
+    var eventText = $(this).parent().siblings().childrem('description').value();
+    localStorage.setItem(eventId, eventText);
+
+});
+
 })
