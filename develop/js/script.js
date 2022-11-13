@@ -1,7 +1,7 @@
 function getlocalStorage(key){
     var value = localStorage.getItem(key);
     if (value) {
-        $('text${key}').text(value);
+        $(`text${key}`).text(value);
     }
 }
 
@@ -34,7 +34,7 @@ $ (document).ready(function(){
         for (var i = 9; i < 18; i++) {
             if ($(`#${i}`).data("time") == currentTime){
                 $(`#text${1}`).addClass("present");
-        }else if (curTime < $(`#${1}`).data("time")) {
+        }else if (currentTime < $(`#${1}`).data("time")) {
             $(`#text${i}`).addClass("future");
         }
     }
@@ -47,7 +47,7 @@ setInterval(function() {
 var saveBtn = $('.saveBtn');
 saveBtn.on('click', function(){
     var eventId = $(this).attr('id');
-    var eventText = $(this).parent().siblings().children('description').value();
+    var eventText = $(this).parent().siblings().children('description').val();
     localStorage.setItem(eventId, eventText);
 
 });
