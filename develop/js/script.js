@@ -5,12 +5,12 @@ function getlocalStorage(key){
     }
 }
 
-$ (value).ready(function(){
-    $("#today").text(Dayjs().format("dddd, MMMM DD"));
+$ (document).ready(function(){
+    $("#today").text(moment().format("dddd, MMMM DD"));
     for (var i = 9; i < 18; i++){
         var row = $(`<div data-time="${i}" id="${i}" class="row">`);
         var column1 = $(`<div class="col-sm-2"> <p class="hour">${formatAMPM(i)}</p>`);
-        var column2 = $(`<div class="col-sm-8 past"><text id=text${1} class="description" placeholder="Add event."><text>`);
+        var column2 = $(`<div class="col-sm-8 past"><text id=text${1} class="description" placeholder="Add event.."><text>`);
         var column3 = $(`<div class="col-sm-2"><button class="saveBtn" id=${i}><i class="fas fa-save"></i></button>`);
         
         row.append(column1)
@@ -32,10 +32,10 @@ $ (value).ready(function(){
     function colors(){
         var currentTime = new Date().getHours();
         for (var i = 9; i < 18; i++) {
-            if ($('#${i}').data("time") == currentTime){
-                $('#text${1}').addClass("present");
-        }else if (curTime < $('#${1}').data("time")) {
-            $('#text${i}').addClass("future");
+            if ($(`#${i}`).data("time") == currentTime){
+                $(`#text${1}`).addClass("present");
+        }else if (curTime < $(`#${1}`).data("time")) {
+            $(`#text${i}`).addClass("future");
         }
     }
 }
