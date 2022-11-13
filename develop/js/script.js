@@ -46,8 +46,8 @@ setInterval(function() {
 
 var saveBtn = $('.saveBtn');
 saveBtn.on('click', function(){
-    var eventId = $(this).attribute('id');
-    var eventText = $(this).parent().siblings().childrem('description').value();
+    var eventId = $(this).attr('id');
+    var eventText = $(this).parent().siblings().children('description').value();
     localStorage.setItem(eventId, eventText);
 
 });
