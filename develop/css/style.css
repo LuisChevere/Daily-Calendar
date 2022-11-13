@@ -46,17 +46,17 @@ body {
     border-top: 1px solid white;
   }
 
-  .then{
+  .past{
     background-color: darkgrey;
     color: white;
   }
   
-  .now{
+  .present{
     background-color: grey;
     color: white;
   }
   
-  .later{
+  .future{
     background-color: lightgray;
     color: white;
   }
