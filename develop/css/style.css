@@ -27,7 +27,7 @@ body {
     height: 100%;
     width:100%;
     color: #000000;
-    border: 2px solid black;
+    border: 2px solid white;
     padding: 10px;
   }
 
@@ -36,6 +36,7 @@ body {
     border-radius: 10px;
 }
   .row{
+    white-space: pre-wrap;
     height: 80px;
     border-top: 2px solid white;
   }
@@ -43,7 +44,7 @@ body {
   .hour{
     background-color: #ffffff;
     color: #000000;
-    border-top: 2px solid white;
+    border-top: 2px solid black;
   }
 
   .past{
@@ -69,8 +70,8 @@ body {
     border-radius: 10px;
     background-color: darkgrey;
     color: whitesmoke;
-    height: 100px;
-    width: 100px;
+    height: 100%;
+    width: 100%;
   }
 
   .saveBtn i:hover{
