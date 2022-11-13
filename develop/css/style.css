@@ -47,12 +47,12 @@ body {
   }
 
   .past{
-    background-color: darkgrey;
+    background-color: black;
     color: white;
   }
   
   .present{
-    background-color: grey;
+    background-color: lightgrey;
     color: white;
   }
   
