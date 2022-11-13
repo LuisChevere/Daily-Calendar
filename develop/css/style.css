@@ -52,19 +52,19 @@ body {
   }
   
   .present{
-    background-color: lightgrey;
-    color: white;
+    background-color: grey;
+    color: black;
   }
   
   .future{
     background-color: lightgray;
-    color: white;
+    color: black;
   }
 
   .saveBtn{
     border-radius: 10px;
-    background-color: grey;
-    color: white;
+    background-color: darkgrey;
+    color: whitesmoke;
     height: 100px;
     width: 100px;
   }
