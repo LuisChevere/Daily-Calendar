@@ -58,12 +58,12 @@ body {
   }
   
   .present{
-    background-color: grey;
+    background-color: lightgrey;
     color: white;
   }
   
   .future{
-    background-color: lightgray;
+    background-color: darkgrey;
     color: white;
   }
 
